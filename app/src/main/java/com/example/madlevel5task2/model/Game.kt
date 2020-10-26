@@ -7,9 +7,9 @@ import java.util.*
 
 @Entity(tableName = "gameTable")
 class Game (
-    title: String,
-    platform: String,
-    releaseDate: Date,
+    var title: String,
+    var platform: String,
+    var releaseDate: Date,
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
